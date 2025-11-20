@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sight Word Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-main">
+        
+        <header>
+            <div class="header-buttons">
+                <button id="high-scores-btn">High Scores</button>
+                <button id="toggle-reveal-btn">Toggle Card Reveal</button>
+            </div>
+
+            <h1>Sight Word Match</h1>
+            
+            <p class="game-instructions">Match the sight word from the <span class="red-text">Red</span> side with the same word from the <span class="blue-text">Blue</span> side. </p>
+
+            <p class="game-instructions">Match them all and beat the high score!</p>
+        </header>
+
+        <div id="game-grids">
+            <div id="left-grid" class="grid-container"></div>
+            
+            <div id="game-info">
+                <div class="stat-block">
+                    <p class="stat-label">Moves:</p>
+                    <p class="stat-value" id="moves-display">0</p>
+                </div>
+                <div class="stat-block">
+                    <p class="stat-label">Time:</p>
+                    <p class="stat-value" id="clockID">0s</p>
+                </div>
+            </div>
+            
+            <div id="right-grid" class="grid-container"></div>
+        </div>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
