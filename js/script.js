@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('high-scores-btn').addEventListener('click', showHighScoresModal);
 
     // 2. Load game words
-    fetch('data/words.json')
+    fetch('../data/words.JSON')
         .then(response => response.json())
         .then(wordList => {
             initializeGame(wordList);
